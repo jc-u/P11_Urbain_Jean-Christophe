@@ -4,15 +4,18 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import { IAccomodations } from './types'
 
+
+
 /* Fetching the data from the json file. */
 async function getAccomodations() {
-  const res = await fetch("/logements.json", {
+  const res = await fetch("/datas/logements.json", {
     headers: {
       "Content-Type": "application/json",
-      Accept: "application/json",
+      "Accept": "application/json",
     },
   });
   const data = await res.json();;
+  
   return data
 }
 
@@ -33,7 +36,7 @@ return (
 
   <Router>
     <Routes>
-     <Route path="/" element={<Home {...accomodations} />} />
+     <Route path="/" element={<Home accomodations={accomodations} />} />
     </Routes>
   </Router>
   )

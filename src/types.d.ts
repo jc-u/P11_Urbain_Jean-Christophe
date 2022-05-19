@@ -14,4 +14,6 @@ interface IAccomodation
     equipments: string[],
     tags: string[]}
 
+interface IAccomodations extends Array<IAccomodation>{}
+console.log(IAccomodations)
 export { IAccomodations }
