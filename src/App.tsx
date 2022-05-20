@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
+import About from './pages/About'
 import { IAccomodations } from './types'
 
 
@@ -37,6 +38,7 @@ return (
   <Router>
     <Routes>
      <Route path="/" element={<Home accomodations={accomodations} />} />
+     <Route path="/about" element={<About />} />
     </Routes>
   </Router>
   )
