@@ -1,5 +1,6 @@
 import React, {FC} from "react";
 
+/* Defining the props that the component will receive. */
 interface IProps {
   cover: string
   title: string

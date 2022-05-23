@@ -8,7 +8,9 @@ const About = () => {
     <div>
       <Header />
       <div className="about__container">
-        <div className="about__banner"></div>
+        <div className="center">
+          <div className="about__banner"></div>
+        </div>
       </div>
       <div className="about__info">
         <Accordion

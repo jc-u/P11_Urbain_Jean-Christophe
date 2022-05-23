@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
+import Lodging from './pages/Lodging'
+import Error404 from './pages/Error404'
 import { IAccomodations } from './types'
 
 
@@ -39,6 +41,8 @@ return (
     <Routes>
      <Route path="/" element={<Home accomodations={accomodations} />} />
      <Route path="/about" element={<About />} />
+     <Route path="/lodging/:id" element={<Lodging accomodations={accomodations} />} />
+     <Route path="*" element={<Error404 />} />
     </Routes>
   </Router>
   )

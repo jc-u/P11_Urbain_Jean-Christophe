@@ -12,9 +12,7 @@ interface IProps {
 
 
 /**
- * The Home component is a functional component that takes an accomodations prop and returns a div with
- * a header, a div with a class of home__container, a div with a class of home__banner, a div with a
- * class of results, and a div with a class of results__container.
+ * The Home component is a functional component that takes an accomodations prop
  * @param {IProps}  - FC<IProps> = ({ accomodations }: IProps)
  * @returns An array of JSX elements.
  */
@@ -23,23 +21,27 @@ const Home: FC<IProps> = ({ accomodations }: IProps) => {
     <div>
       <Header />
       <div className="home__container">
-        <div className="home__banner">
-          <h2>Chez vous, partout et ailleurs</h2>
+        <div className='center'>
+          <div className="home__banner">
+            <h1>Chez vous,<br></br> partout et ailleurs</h1>
+          </div>
         </div>
       </div>
       <div className="results">
-        <div className="results__container">
+        <div className='center'>
+          <div className="results__container">
             {accomodations.map((accomodation) => {
                   return (
-                        <Link to={'/accomodation/' + accomodation.id} className="accomodation-link" key={accomodation.id}>
+                        <Link to={'/lodging/' + accomodation.id} className="lodging-link" key={accomodation.id}>
                             <Thumb cover={accomodation.cover} title={accomodation.title}/>
                         </Link>
                   )
                 })
             }
+          </div>
         </div>
       </div>
-      <Footer />
+     <Footer />
     </div>
   )
 }

@@ -1,0 +1,27 @@
+.error404__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  .error404 {
+    color: $primaire;
+    font-size: 96px;
+    font-weight:bold;
+    text-align: center;
+  }
+
+  .error404-message {
+    width: 260px;
+    margin: 0 auto;
+    color: $primaire;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .back-to-home {
+    color: $primaire;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: underline;
+    margin: 70px 0 38px;
+  }
+}

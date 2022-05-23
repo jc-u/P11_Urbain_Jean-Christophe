@@ -1,0 +1,171 @@
+.lodging {
+  .slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    img {
+      width: 335px;
+      border-radius: 10px;
+    }
+    .arrowback {
+      width: 24px;
+      position: absolute;
+      top: 45%;
+      left: 10px;
+    }
+    .arrowforward {
+      width: 24px;
+      position: absolute;
+      top: 45%;
+      right: 10px;
+    }
+  }
+
+  .lodging-left {
+    .lodging__title {
+      margin-top: 10px;
+    }
+
+    .lodging__location {
+      margin-top: 10px;
+    }
+
+    .tag__container {
+      margin-top: 10px;
+      .tags {
+        display: flex;
+      .tag {
+        width: 84px;
+        color: white;
+        font-size: 10px;
+        background-color: $primaire;
+        border-radius: 5px;
+        margin-right: 10px;
+        text-align: center;
+      }  
+      }
+    }
+  }
+
+  .lodging-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+
+    .host__details {
+      display: flex;
+      align-items: center;
+      order: 2;
+      
+
+      .host__name {
+        width: 60px;
+      }
+      .profile {
+        img {
+          width: 32px;
+          border-radius: 100%;
+        }
+    
+      }
+    }
+
+    .star {
+      width: 18px;
+    }
+  }
+
+  .lodging__details {
+    .accordion {
+      margin: 20px auto;
+  
+      .accordion__header {
+        background-color: $primaire;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 30px;
+        cursor: pointer;
+  
+        span {
+          color: white;
+          font-size: 13px;
+          margin-left: 10px;
+        }
+  
+        img {
+          width: 18px;
+          margin-right: 10px;
+          -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+          animation-duration: 1s;
+        }
+      }
+  
+      .accordion-content {
+        padding: 20px 3px 0 10px;
+        background-color: $secondaire;
+        border-radius: 0 0 5px 5px;
+        -webkit-animation-name: fadeInDown;
+        animation-name: fadeInDown;
+        animation-duration: 1s;
+        height: 143px;
+      }
+  
+     
+  
+      .accordion-content--hidden {
+  
+        -webkit-animation-name: fadeInUp;
+        animation-name: fadeInUp;
+        animation-duration: 1s;
+  
+        p{
+          display: none;
+        }
+      }
+    }
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      height: 0;
+      opacity: 0;
+      -webkit-transform: translate3d(0, -10%, 0);
+      transform: translate3d(0, -10%, 0);
+    }
+    to {
+      height: 143px;
+      opacity: 1;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      height: 143px;
+      opacity: 0;
+      -webkit-transform: translate3d(0, 25%, 0);
+      transform: translate3d(0, 25%, 0);
+    }
+    to {
+      display: none;
+      height: 0;
+      opacity: 1;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

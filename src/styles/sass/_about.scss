@@ -1,0 +1,102 @@
+.about__banner {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/backgroundAbout.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 223px;
+  border-radius: 10px
+}
+
+.about__info {
+  width: 90%;
+	margin: 0 auto 20px;
+
+  .accordion {
+    margin-top: 20px;
+
+    .accordion__header {
+      background-color: $primaire;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 30px;
+      cursor: pointer;
+
+      span {
+        color: white;
+        font-size: 13px;
+        margin-left: 10px;
+      }
+
+      img {
+        width: 18px;
+        margin-right: 10px;
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+      }
+    }
+
+    .accordion-content {
+      background-color: $secondaire;
+      border-radius: 0 0 5px 5px;
+      -webkit-animation-name: fadeInDown;
+      animation-name: fadeInDown;
+      animation-duration: 1s;
+      height: 143px;
+      padding: 20px 3px 0 10px;
+    }
+
+    .accordion-content--hidden {
+
+      -webkit-animation-name: fadeInUp;
+      animation-name: fadeInUp;
+      animation-duration: 1s;
+
+      p{
+        display: none;
+      }
+    }
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    height: 0;
+    opacity: 0;
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0);
+  }
+  to {
+    height: 143px;
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    height: 143px;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 25%, 0);
+    transform: translate3d(0, 25%, 0);
+  }
+  to {
+    display: none;
+    height: 0;
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
