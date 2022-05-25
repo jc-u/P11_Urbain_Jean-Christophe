@@ -1,26 +1,27 @@
-import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Accordion from "../components/Accordion";
+import React from 'react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Accordion from '../components/Accordion';
 
 const About = () => {
+
   return (
     <div>
       <Header />
-      <div className="about__container">
-        <div className="center">
-          <div className="about__banner"></div>
+      <div className='about__container'>
+        <div className='center'>
+          <div className='about__banner'></div>
         </div>
       </div>
-      <div className="about__info">
+      <div className='about__info'>
         <Accordion
-          header="Fiabilité"
-          content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes." defaultClosed={true}        />
+          header='Fiabilité'
+          content='Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.' defaultClosed={true}        />
         <Accordion
-          header="Respect"
-          content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." defaultClosed={true}        />
+          header='Respect'
+          content='La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.' defaultClosed={true}        />
         <Accordion
-          header="Service"
+          header='Service'
           content="Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question." defaultClosed={true}        />
         <Accordion
           header="Sécurité"

@@ -14,7 +14,7 @@ interface IProps {
  */
 const Tags: FC<IProps> = ({ tags }: IProps) => {
   return (
-    <div className="tags">
+    <div className='tags'>
     {
         tags.map(tag => {
           return (

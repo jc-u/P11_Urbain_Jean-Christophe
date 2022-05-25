@@ -5,8 +5,15 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
-html {
-	scroll-behavior: smooth;
+html, body {
+	display: table;
+	width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#root {
+  height: auto;
 }
 
 .center {
@@ -82,6 +89,7 @@ ul {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		width: 250px;
 
 
 		li {

@@ -17,10 +17,10 @@ const Rating: FC<IProps> = ({ rating }:IProps) => {
     <div>
       {stars.map((star) => (
         <img
-          className="star"
+          className='star'
           key={star}
           src={level >= star ? starRateFull : starRate}
-          alt="star"
+          alt='star'
           onClick={() => (level !== star ? setLevel(star) : setLevel(star - 1))}
         />
       ))}

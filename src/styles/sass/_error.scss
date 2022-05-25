@@ -1,3 +1,6 @@
+.error {
+
+
 .error404__container {
   display: flex;
   flex-direction: column;
@@ -23,5 +26,37 @@
     font-size: 14px;
     text-decoration: underline;
     margin: 70px 0 38px;
+  }
+
+ 
+} 
+
+.footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+.error {
+.error404__container {
+  .error404 {
+    font-size: 288px;
+  }
+
+  .error404-message {
+    margin-top: 40px;
+    width: 100%;
+    font-size: 36px;
+  }
+
+  .back-to-home {
+  
+    font-size: 18px;
+    margin: 150px 0 38px;
+  }
+
+ 
+    } 
   }
 }

@@ -1,0 +1,88 @@
+@keyframes ldio-vqbefsoan2c {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeInLoader {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+  
+}
+
+
+@keyframes body {
+  0%,
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#root {
+  animation: body linear 1.4s;
+  z-index: 200;
+  position: relative;
+}
+.loading-spinner div {
+
+  width: 120px;
+  height: 120px;
+  border: 20px solid #ff6060;
+  border-top-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+    position: absolute;
+    top: 42%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+
+  
+}
+.loading-spinner div {
+  animation: ldio-vqbefsoan2c 500ms linear infinite;
+
+}
+.loading {
+  background-color: white;
+  margin: 0 auto;
+  width: 100%;
+  animation: fadeInLoader 2s linear;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  opacity: 0;
+}
+.loading-spinner {
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  animation: fadeOut 2s linear;
+  transform-origin: 0 0; /* see note above */
+  opacity: 0;
+  z-index: 100;
+  
+}
+.loading-spinner div { box-sizing: content-box; }

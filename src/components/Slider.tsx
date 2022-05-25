@@ -14,12 +14,12 @@ const Slider: FC<IProps> = ({ pictures, alt }: IProps) => {
 
  /* Returning the JSX for the component. */
   return (
-    <div className="slider">
-      <img src={displayedImage} alt={alt} className="displayedimage" />
+    <div className='slider'>
+      <img src={displayedImage} alt={alt} className='displayedimage' />
       <img
         src={arrowBack}
-        alt="arrowBack"
-        className={pictures.length > 1 ? "arrowback" : "hide"}
+        alt='arrowBack'
+        className={pictures.length > 1 ? 'arrowback' : 'hide'}
         onClick={() =>
           displayedImage === pictures[0]
             ? setDisplayedImage(pictures[pictures.length - 1])
@@ -28,15 +28,15 @@ const Slider: FC<IProps> = ({ pictures, alt }: IProps) => {
       />
       <img
         src={arrowForward}
-        alt="arrowforward"
-        className={pictures.length > 1 ? "arrowforward" : "hide"}
+        alt='arrowforward'
+        className={pictures.length > 1 ? 'arrowforward' : 'hide'}
         onClick={() =>
           displayedImage === pictures[pictures.length - 1]
             ? setDisplayedImage(pictures[0])
             : setDisplayedImage(pictures[i + 1])
         }
       />
-      <p className={pictures.length > 1 ? "slidenumber" : "hide"}>
+      <p className={pictures.length > 1 ? 'slidenumber' : 'hide'}>
         {i + 1}/{pictures.length}
       </p>
     </div>

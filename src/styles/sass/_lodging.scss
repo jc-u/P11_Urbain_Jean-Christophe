@@ -24,10 +24,12 @@
   .lodging-left {
     .lodging__title {
       margin-top: 10px;
+      font-weight: normal;
     }
 
     .lodging__location {
       margin-top: 10px;
+      font-weight: normal;
     }
 
     .tag__container {
@@ -137,7 +139,7 @@
       transform: translate3d(0, -10%, 0);
     }
     to {
-      height: 143px;
+      max-height: 100%;
       opacity: 1;
       -webkit-transform: translateZ(0);
       transform: translateZ(0);
@@ -168,4 +170,154 @@
       opacity: 1;
     }
   }
+}
+
+@media (min-width: 414px) {
+  .lodging {
+    .slider {
+      img {
+        width: 100%;
+        border-radius: 25px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .lodging {
+    .slider {
+      img {
+      }
+      .arrowback {
+        width: 96px;
+        height: 119px;
+      }
+      .arrowforward {
+        width: 96px;
+        height: 119px;
+  
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+.lodging {
+  .slider {
+    .slidenumber {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      color: white;
+      font-size: 18px;
+    }
+    img {
+    }
+    .arrowback {
+    }
+    .arrowforward {
+
+    }
+  }
+
+  .lodging__container {
+    display: flex;
+    align-items: center;
+
+  .lodging-left {
+    width: 85%;
+    .lodging__title {
+      margin-top: 20px;
+    }
+
+    .lodging__location {
+    }
+
+    .tag__container {
+      margin-top: 20px;
+      .tags {
+      .tag {
+        width: 115px;
+        font-size: 14px;
+        border-radius: 10px;
+      }  
+      }
+    }
+  }
+
+  .lodging-right {
+    display: block;
+    margin: 10px auto;
+
+    .host__details {
+      display: flex;
+      align-items: center;
+      margin: 20px auto;
+
+      
+
+      .host__name {
+        width: 93px;
+      }
+      .profile {
+        img {
+          width: 64px;
+          border-radius: 100%;
+        }
+    
+      }
+    }
+
+    .star {
+      width: 36px;
+    }
+  }
+}
+  .lodging__details {
+    display: flex;
+    justify-content: space-between;
+    .accordion {
+      width: 48%;
+      margin: 20px 0;
+  
+      .accordion__header {
+        height: 52px;
+        span {
+          font-size: 18px;
+        }
+  
+        img {
+          width: 32px;
+          margin-right: 10px;
+          -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+          animation-duration: 1s;
+        }
+      }
+  
+      .accordion-content {
+        padding: 20px 3px 0 10px;
+        background-color: $secondaire;
+        border-radius: 0 0 5px 5px;
+        -webkit-animation-name: fadeInDown;
+        animation-name: fadeInDown;
+        animation-duration: 300ms;
+        height: 249px;
+      }
+  
+     
+  
+      .accordion-content--hidden {
+  
+        -webkit-animation-name: fadeInUp;
+        animation-name: fadeInUp;
+        animation-duration: 1s;
+  
+        p{
+          display: none;
+        }
+      }
+    }
+  }
+}
 }

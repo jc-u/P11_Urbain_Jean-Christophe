@@ -1,9 +1,12 @@
 .footer {
+  display: table-row;
+  position: unset;
   height: 209px;
   background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 
   img {
     margin-top: 60px;   

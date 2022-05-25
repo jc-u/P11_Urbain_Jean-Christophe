@@ -1,6 +1,6 @@
-import React, {FC, useState} from "react";
-import arrowBack from "../assets/arrowDown.svg"
-import arrowUp from "../assets/arrowUp.svg"
+import React, {FC, useState} from 'react';
+import arrowBack from '../assets/arrowDown.svg';
+import arrowUp from '../assets/arrowUp.svg';
 
 /* Defining the props that the component will receive. */
 interface IProps {
@@ -19,10 +19,10 @@ const Accordion: FC<IProps> = ({ content, header, defaultClosed }: IProps) => {
 
  /* Returning the JSX that will be rendered. */
   return (
-    <div className="accordion">
-        <div className="accordion__header" onClick={() => setState(!isClosed) }>
-            <span className="accordion__title">{header}</span>
-            <img src={isClosed ? arrowBack : arrowUp} alt="arrow" className="accordion-arrow"/>
+    <div className='accordion'>
+        <div className='accordion__header' onClick={() => setState(!isClosed) }>
+            <span className='accordion__title'>{header}</span>
+            <img src={isClosed ? arrowBack : arrowUp} alt='arrow' className='accordion-arrow'/>
         </div>
         <div className={isClosed ? 'accordion-content--hidden' : 'accordion-content'}>
         {
