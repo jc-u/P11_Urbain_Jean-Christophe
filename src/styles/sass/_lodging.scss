@@ -4,7 +4,7 @@
     overflow: hidden;
     position: relative;
     img {
-      width: 335px;
+      width: 100%;
       border-radius: 10px;
     }
     .arrowback {
@@ -79,6 +79,7 @@
   }
 
   .lodging__details {
+    height: 100vh;
     .accordion {
       margin: 20px auto;
   

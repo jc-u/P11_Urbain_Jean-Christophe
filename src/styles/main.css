@@ -10,7 +10,7 @@
 html, body {
   display: table;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: relative;
 }
 
@@ -214,7 +214,8 @@ ul li {
 
 .about__info {
   width: 90%;
-  margin: 0 auto 20px;
+  margin: 0 auto 100px;
+  height: 100vh;
 }
 
 .about__info .accordion {
@@ -365,7 +366,7 @@ ul li {
   }
   .about__info {
     width: 1023px;
-    margin: 0 auto 210px;
+    margin: 0 auto;
   }
   .about__info .accordion {
     margin-top: 40px;
@@ -416,7 +417,7 @@ ul li {
 }
 
 .lodging .slider img {
-  width: 335px;
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -500,6 +501,10 @@ ul li {
 
 .lodging .lodging-right .star {
   width: 18px;
+}
+
+.lodging .lodging__details {
+  height: 100vh;
 }
 
 .lodging .lodging__details .accordion {
