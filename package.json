@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://jc-u.github.io/",
+  "homepage": "https://jc-u.github.io/P11_Urbain_Jean-Christophe",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
