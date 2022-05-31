@@ -625,10 +625,12 @@ ul li {
   .lodging .slider .arrowback {
     width: 96px;
     height: 119px;
+    top: 35%;
   }
   .lodging .slider .arrowforward {
     width: 96px;
     height: 119px;
+    top: 35%;
   }
 }
 
