@@ -11,7 +11,7 @@ import { IAccomodations } from './types'
 
 /* Fetching the data from the json file. */
 async function getAccomodations() {
-  const res = await fetch("./datas/logements.json", {
+  const res = await fetch("../datas/logements.json", {
     headers: {
       "Content-Type": "application/json",
       "Accept": "application/json",
