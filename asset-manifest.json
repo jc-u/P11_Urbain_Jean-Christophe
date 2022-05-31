@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/P11_Urbain_Jean-Christophe/static/css/main.d8b6f32f.css",
+    "main.js": "/P11_Urbain_Jean-Christophe/static/js/main.cd10aad6.js",
+    "static/media/background.png": "/P11_Urbain_Jean-Christophe/static/media/background.024f945a990ae17b81b7.png",
+    "static/media/backgroundAbout.png": "/P11_Urbain_Jean-Christophe/static/media/backgroundAbout.09998aa56962f585ab75.png",
+    "static/media/logo.svg": "/P11_Urbain_Jean-Christophe/static/media/logo.a6101328193bb3191cbcb50c120ec0d1.svg",
+    "static/media/logoFooter.svg": "/P11_Urbain_Jean-Christophe/static/media/logoFooter.ee689fd9409d1b5a898b4247819d8a00.svg",
+    "index.html": "/P11_Urbain_Jean-Christophe/index.html",
+    "static/media/arrowUp.svg": "/P11_Urbain_Jean-Christophe/static/media/arrowUp.388505ec07f113554881104fd596c082.svg",
+    "static/media/arrowDown.svg": "/P11_Urbain_Jean-Christophe/static/media/arrowDown.ec9206f164c4b26efff2f6c600e4fdaf.svg",
+    "static/media/arrowBack.svg": "/P11_Urbain_Jean-Christophe/static/media/arrowBack.3529f3989e39b758930113b6f7a3d1d4.svg",
+    "static/media/arrowForward.svg": "/P11_Urbain_Jean-Christophe/static/media/arrowForward.20f8ff01b05f9ea0cf55933722f7806c.svg",
+    "static/media/starRate.svg": "/P11_Urbain_Jean-Christophe/static/media/starRate.38752bcafc1045fa6b545169fb0eb2eb.svg",
+    "static/media/starRateFull.svg": "/P11_Urbain_Jean-Christophe/static/media/starRateFull.a21f8abfc51a23975832b769119429bd.svg",
+    "main.d8b6f32f.css.map": "/P11_Urbain_Jean-Christophe/static/css/main.d8b6f32f.css.map",
+    "main.cd10aad6.js.map": "/P11_Urbain_Jean-Christophe/static/js/main.cd10aad6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8b6f32f.css",
+    "static/js/main.cd10aad6.js"
+  ]
+}
