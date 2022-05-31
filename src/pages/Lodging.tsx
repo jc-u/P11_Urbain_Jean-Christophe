@@ -59,7 +59,7 @@ const { pictures, title, location, host, tags, rating, description, equipments }
                         </div>
                       
                         <div className='lodging__details'>
-                          <Accordion header='Description' content={description} defaultClosed={false}/>
+                          <Accordion header='Description' content={description} defaultClosed={true}/>
                           <Accordion header='Équipements' content={equipments} defaultClosed={true}/>
                         </div>
                   </div>
