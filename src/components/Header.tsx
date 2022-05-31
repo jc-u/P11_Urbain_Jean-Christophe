@@ -6,12 +6,12 @@ function Header() {
   return (
     <div className='header'>
       <div className='center'>
-      <Link to="/">
+      <Link to="/P11_Urbain_Jean-Christophe">
         <img src={logo} className='logo' alt='logo' />
       </Link>
 
         <ul>
-          <Link to="/" className='nav'>
+          <Link to="/P11_Urbain_Jean-Christophe" className='nav'>
             <li>Acceuil</li>
           </Link>
           <Link to="/about" className='nav'>
