@@ -39,7 +39,7 @@ return (
 
   <Router>
     <Routes>
-     <Route path="/" element={<Home accomodations={accomodations} />} />
+     <Route path="/P11_Urbain_Jean-Christophe" element={<Home accomodations={accomodations} />} />
      <Route path="/about" element={<About />} />
      <Route path="/lodging/:id" element={<Lodging accomodations={accomodations} />} />
      <Route path="*" element={<Error404 />} />
