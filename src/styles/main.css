@@ -152,6 +152,9 @@ ul li {
 
 .results .results__container .thumb img {
   width: 100%;
+  height: 255px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
 }
 
@@ -197,6 +200,7 @@ ul li {
   }
   .results .results__container .thumb img {
     width: 340px;
+    height: 340px;
   }
   .results .results__container .thumb h2 {
     font-size: 18px;
@@ -416,8 +420,11 @@ ul li {
   position: relative;
 }
 
-.lodging .slider img {
+.lodging .slider .displayedimage {
   width: 100%;
+  height: 255px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
 }
 
@@ -612,6 +619,9 @@ ul li {
 }
 
 @media (min-width: 768px) {
+  .lodging .slider .displayedimage {
+    height: 415px;
+  }
   .lodging .slider .arrowback {
     width: 96px;
     height: 119px;
