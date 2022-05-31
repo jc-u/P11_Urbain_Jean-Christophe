@@ -731,6 +731,7 @@ ul li {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 100px;
+  height: 100vh;
 }
 
 .error .error404__container .error404 {
