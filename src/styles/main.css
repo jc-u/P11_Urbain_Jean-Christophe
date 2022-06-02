@@ -442,6 +442,10 @@ ul li {
   right: 10px;
 }
 
+.lodging .slider .arrowforward .hide {
+  display: none;
+}
+
 .lodging .lodging-left .lodging__title {
   margin-top: 10px;
   font-weight: normal;
