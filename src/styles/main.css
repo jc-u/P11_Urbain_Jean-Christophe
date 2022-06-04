@@ -446,6 +446,10 @@ ul li {
   display: none;
 }
 
+.lodging .slider .slidenumber {
+  display: none;
+}
+
 .lodging .lodging-left .lodging__title {
   margin-top: 10px;
   font-weight: normal;
@@ -619,6 +623,9 @@ ul li {
   .lodging .slider img {
     width: 100%;
     border-radius: 25px;
+  }
+  .lodging .slider .slidenumber {
+    display: block;
   }
 }
 
