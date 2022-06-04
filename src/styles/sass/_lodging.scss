@@ -27,6 +27,10 @@
     .hide {
         display: none;
       }
+
+      .slidenumber {
+        display: none;
+      }
   }
 
   .lodging-left {
@@ -187,6 +191,10 @@
       img {
         width: 100%;
         border-radius: 25px;
+      }
+
+      .slidenumber{
+        display: block;
       }
     }
   }
